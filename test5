@@ -7,7 +7,7 @@ oid test_szukanie_na_stronie_glownej(string link)
     otwieranie_kodu_zrodlowego(link, linijki_kodu_zrodlowego);//otwieranie kodu zrodlowego strony glownej
 
     if(linijki_kodu_zrodlowego.size() > 5)
-    {
+    {fghfgh
         cout<<"SZUKA KATEGORII: "<<endl;
         odnalezienie_kategorii(linijki_kodu_zrodlowego, linki_kategorie);//szuka linkow do kategorii
         linijki_kodu_zrodlowego.clear();//czysci linijki kodu zrodlowego strony glownej
