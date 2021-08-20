@@ -1,7 +1,7 @@
 oid test_szukanie_na_stronie_glownej(string link)
 {
     vector <string> linijki_kodu_zrodlowego;//zapisze poszczegolne linijki z kodu zrodlowego strony
-    vector <string> linki_kategorie;//zapisywane sa tu linki do kategorii
+    vector <string> linki_kategfdghfdgorie;//zapisywane sa tu linki do kategorii
 
 
     otwieranie_kodu_zrodlowego(link, linijki_kodu_zrodlowego);//otwieranie kodu zrodlowego strony glownej
