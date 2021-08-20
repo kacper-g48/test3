@@ -1,0 +1,29 @@
+oid test_szukanie_na_stronie_glownej(string link)
+{
+    vector <string> linijki_kodu_zrodlowego;//zapisze poszczegolne linijki z kodu zrodlowego strony
+    vector <string> linki_kategorie;//zapisywane sa tu linki do kategorii
+
+
+    otwieranie_kodu_zrodlowego(link, linijki_kodu_zrodlowego);//otwieranie kodu zrodlowego strony glownej
+
+    if(linijki_kodu_zrodlowego.size() > 5)
+    {
+        cout<<"SZUKA KATEGORII: "<<endl;
+        odnalezienie_kategorii(linijki_kodu_zrodlowego, linki_kategorie);//szuka linkow do kategorii
+        linijki_kodu_zrodlowego.clear();//czysci linijki kodu zrodlowego strony glownej
+
+
+        for(unsigned int nr_kategorii=0; nr_kategorii<linki_kategorie.size(); nr_kategorii++)//wykonuje sie dla kazdej kategorii i szuka linkow wszystkich produktow
+        {
+            cout<<linki_kategorie[nr_kategorii]<<endl;
+        }
+
+    }
+}
+
+void zrobienie_produktow_z_pliku()
+{
+    vector <string> linijki_kodu_zrodlowego;//zapisze poszczegolne linijki z kodu zrodlowego strony
+    vector <string> linki_produkty;//zapisywane tu sa linki do produktow
+
+    vector <produkt> produkty_tablica;//zapisuje wszystkie linki, paramety, nazwy
