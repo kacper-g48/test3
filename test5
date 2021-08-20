@@ -21,6 +21,9 @@ oid test_szukanie_na_stronie_glownej(string link)
     }
 }
 
+gfdgfd
+gfdgfd
+
 void zrobienie_produktow_z_pliku()
 {
     vector <string> linijki_kodu_zrodlowego;//zapisze poszczegolne linijki z kodu zrodlowego strony
